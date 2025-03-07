@@ -10,6 +10,7 @@
         /* Estilos generales */
         body {
             font-family: 'Press Start 2P', cursive;
+            background-color: black;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -70,30 +71,47 @@
         /* Hero section */
         .hero {
             position: relative;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #222;
-            overflow: hidden;
+            text-align: center;
         }
-        .video-background {
+
+        .hero .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para el fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .overlay {
-            position: relative;
-            z-index: 2;
-            text-align: center;
+
+        .hero .content-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%; /* Ajusta el ancho según sea necesario */
+            max-width: 600px; /* Limita el ancho máximo */
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #007bff;
             color: white;
-        }
-        .hero h1, .hero p {
-            font-size: 1.5rem;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
         /* Testimonios */
@@ -117,44 +135,81 @@
         }
 
         .testimonial {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color: #222;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
 
-    .testimonial-img {
-        border-radius: 50%;
-        width: 100px;  /* Aumenta el tamaño de la imagen */
-        height: 100px; /* Aumenta el tamaño de la imagen */
-        margin-right: 15px;
-    }
+        .testimonial-img {
+            border-radius: 50%;
+            width: 100px;  /* Aumenta el tamaño de la imagen */
+            height: 100px; /* Aumenta el tamaño de la imagen */
+            margin-right: 15px;
+        }
 
-    .comment {
-        font-size: 16px;
-        color: #fff;
-    }
+        .comment {
+            font-size: 16px;
+            color: #fff;
+        }
 
-    .testimonial-name {
-        font-size: 14px;
-        color: #ddd;
-        font-weight: bold;
-    }
+        .testimonial-name {
+            font-size: 14px;
+            color: #ddd;
+            font-weight: bold;
+        }
+
+        /* Sección de juegos destacados */
+        .featured-games {
+            background-color: #1a1a2e;
+            padding: 40px 0;
+        }
+
+        .featured-games h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .game-card {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            font-size: 1.5rem;
+            color: #e94560;
+        }
+
+        .game-card p {
+            color: #ccc;
+        }
 
         /* Media Queries para Responsividad */
-
         @media (max-width: 767px) {
             .navbar {
                 padding: 0.5rem;
             }
             .hero {
                 height: 50vh;
-            }
-            .video-background {
-                display: none;
             }
             .testimonial-pixelart {
                 margin-bottom: 20px;
@@ -167,6 +222,9 @@
             }
             .progress-container {
                 width: 100%;
+            }
+            .game-card {
+                margin-bottom: 20px;
             }
         }
 
@@ -193,7 +251,6 @@
                 width: 80%;
             }
         }
-
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -232,159 +289,137 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-outline-light me-2">Login</a>
-                    <a href="#" class="btn btn-primary">Registro</a>
+                    <a href="#" class="btn btn-outline-light">Iniciar sesión</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <!-- Sección Hero -->
+    <section class="hero">
         <div class="overlay">
-            <h1>Bienvenido a Pixelverse</h1>
-            <p>Explora mundos increíbles y juega con la comunidad.</p>
-            <a href="#" class="btn btn-primary btn-lg">Explorar Juegos</a>
-        </div>
-        <img src="img/nv0cg04bnka91.gif" alt="">
-    </header>
-
-    <!-- Contenido Principal -->
-    <section class="container mt-5">
-        <h2 class="text-center text-white">Juegos Destacados 2025</h2>
-        <div class="row">
-            <!-- Juego 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/maxresdefault.jpg" class="card-img-top" alt="Aeterna Lucis">
-                    <div class="card-body">
-                        <h5 class="card-title">Aeterna Lucis</h5>
-                        <p class="card-text">La esperada secuela de Aeterna Noctis, que expande el universo con nuevas mecánicas de combate y mundos por descubrir. Prepárate para la aventura más desafiante del año.</p>
-                        <a href="#" class="btn btn-primary">Ver Más</a>
-                    </div>
-                </div>
+            <div class="content-box">
+                <h1>Bienvenido a Pixelverse</h1>
+                <p>¡El universo de los videojuegos donde todo es posible!</p>
+                <a href="#" class="btn">Explorar Juegos</a>
             </div>
-            <!-- Juego 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/starfield-heller.webp" class="card-img-top" alt="Starfield">
-                    <div class="card-body">
-                        <h5 class="card-title">Starfield</h5>
-                        <p class="card-text">El universo de Starfield se expande con nuevas aventuras en el espacio. Explora planetas desconocidos y enfrenta desafíos galácticos en un juego de rol épico.</p>
-                        <a href="#" class="btn btn-primary">Ver Más</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Juego 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/opengraph-image.png" class="card-img-top" alt="Hellblade II">
-                    <div class="card-body">
-                        <h5 class="card-title">Hellblade II: Senua's Saga</h5>
-                        <p class="card-text">Senua regresa para enfrentar sus peores miedos en un mundo lleno de mitos y oscuridad. La secuela de Hellblade promete ser aún más impactante y emocionalmente intensa.</p>
-                        <a href="#" class="btn btn-primary">Ver Más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-
-    <section class="container mt-5">
-        <h2 class="text-center text-white">Lo que dicen nuestros usuarios</h2>
-        <div class="testimonial-pixelart">
-            <!-- Testimonio 1 -->
-            <div class="testimonial">
-                <img src="img/pepe-watching-tv.gif" alt="Jugador 1" class="testimonial-img">
-                <div class="comment" id="comment1">"Un juego increíble, muy divertido y lleno de aventuras."</div>
-                <p class="testimonial-name">spkide</p>
-            </div>
-            
-            <!-- Testimonio 2 -->
-            <div class="testimonial">
-                <img src="img/dc7f90b52f8c95e29939b431b93ee0b6.gif" alt="Jugador 2" class="testimonial-img">
-                <div class="comment" id="comment2">"La comunidad de Pixelverse es lo mejor. ¡Siempre dispuesto a ayudar!"</div>
-                <p class="testimonial-name">game_player42</p>
-            </div>
-    
-            <!-- Testimonio 3 -->
-            <div class="testimonial">
-                <img src="img/662cda1ea6bdac6afb16973961c2c8d1.gif" alt="Jugador 3" class="testimonial-img">
-                <div class="comment" id="comment3">"Excelente plataforma, me encanta cómo los desarrolladores interactúan con los jugadores."</div>
-                <p class="testimonial-name">loxan_yt</p>
-            </div>
-    
-            <!-- Testimonio 4 -->
-            <div class="testimonial">
-                <img src="img/386337b8629611b35b5a45388be40827.jpg" alt="Jugador 4" class="testimonial-img">
-                <div class="comment" id="comment4">"La mejor experiencia de juego que he tenido, los gráficos son impresionantes!"</div>
-                <p class="testimonial-name">gamer_ninja</p>
-            </div>
-            
-            <!-- Testimonio 5 -->
-            <div class="testimonial">
-                <img src="img/8a920d5814d6c60ca9edbe200925b8d3.jpg" alt="Jugador 5" class="testimonial-img">
-                <div class="comment" id="comment5">"Una experiencia única y entretenida, ¡no me canso de jugar!"</div>
-                <p class="testimonial-name">raphael_85</p>
-            </div>
-        </div>
-    
-        <!-- Formulario para publicar comentario -->
-        <div class="comment-form">
-            <h4 class="text-white">Publica tu comentario</h4>
-            <textarea id="new-comment" rows="4" placeholder="Escribe tu comentario aquí..." class="form-control"></textarea>
-            <button id="submit-comment" class="btn">Publicar Comentario</button>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center text-white mt-5 py-4" style="background-color: #1a1a2e;">
-        <p>&copy; 2025 Pixelverse. Todos los derechos reservados.</p>
-        <div class="social-links">
-            <a href="#" class="mx-2">
-                <img src="img/tumblr_nca6tjn3aI1rtbl5vo1_400.gif" alt="Twitter" style="width: 30px; height: auto;">
-            </a>
-            <a href="#" class="mx-2">
-                <img src="img/7677aecd4b27c46.gif" alt="Twitch" style="width: 30px; height: auto;">
-            </a>
-            <a href="#" class="mx-2">
-                <img src="img/f169e6ecbf0ad35.gif" alt="Discord" style="width: 30px; height: auto;">
-            </a>
+   <!-- Sección de Juegos Destacados -->
+<section class="featured-games">
+    <div class="container">
+        <h2>Juegos Destacados</h2>
+        <div class="row">
+            <!-- Juego 1: Civilization VII -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="img/1376473.jpg" alt="Civilization VII">
+                    <h3>Civilization VII</h3>
+                    <p>Construye y lidera tu civilización a través de los siglos. Un juego de estrategia por turnos que te desafiará a tomar decisiones cruciales.</p>
+                </div>
+            </div>
+            <!-- Juego 2: Aeterna Lucis -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="img/capsule_616x353.jpg" alt="Aeterna Lucis">
+                    <h3>Aeterna Lucis</h3>
+                    <p>Embárcate en una nueva aventura metroidvania con la Reina de la Luz, enfrentando oscuros enemigos y descubriendo secretos antiguos.</p>
+                </div>
+            </div>
+            <!-- Juego 3: Monster Hunter Wilds -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="img/wilds-wallpaper-v0-ii61sry7705c1.webp" alt="Monster Hunter Wilds">
+                    <h3>Monster Hunter Wilds</h3>
+                    <p>Únete a la caza de monstruos en un mundo abierto lleno de desafíos. Prepárate para enfrentar las criaturas más imponentes.</p>
+                </div>
+            </div>
         </div>
-    </footer>    
+        <div class="row">
+            <!-- Juego 4: Grand Theft Auto 6 -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="img/the-full-gta-vi-reveal-artwork-directly-from-rockstars-v0-dkj530ewih4c1.webp" alt="Grand Theft Auto 6">
+                    <h3>Grand Theft Auto VI</h3>
+                    <p>La sexta entrega de esta icónica saga, ofreciendo un mundo abierto más grande y detallado. Prepárate para caos y acción en la ciudad más vibrante.</p>
+                </div>
+            </div>
+            <!-- Juego 5: eFootball 2025 -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="img/wp14521068.webp" alt="eFootball 2025">
+                    <h3>eFootball 2025</h3>
+                    <p>La nueva entrega del popular simulador de fútbol, con mejoras en la jugabilidad y gráficos ultra realistas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Script de carga de la barra -->
+    <!-- Testimonios -->
+    <section>
+        <div class="container">
+            <h2 class="text-center my-5">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-pixelart">
+                        <h4>Testimonios</h4>
+                        <div class="testimonial">
+                            <img src="img/386337b8629611b35b5a45388be40827.jpg" alt="Imagen 1" class="testimonial-img">
+                            <div>
+                                <p class="comment">¡Pixelverse es una experiencia única y divertida!</p>
+                                <p class="testimonial-name">spkide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-pixelart">
+                        <h4>Testimonios</h4>
+                        <div class="testimonial">
+                            <img src="img/662cda1ea6bdac6afb16973961c2c8d1.gif" alt="Imagen 2" class="testimonial-img">
+                            <div>
+                                <p class="comment">¡Un gran lugar para disfrutar con amigos!</p>
+                                <p class="testimonial-name">María López</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-pixelart">
+                        <h4>Testimonios</h4>
+                        <div class="testimonial">
+                            <img src="img/pepe-watching-tv.gif" alt="Imagen 3" class="testimonial-img">
+                            <div>
+                                <p class="comment">Una plataforma innovadora con muchos juegos geniales.</p>
+                                <p class="testimonial-name">Carlos García</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
-            // Función para agregar un nuevo comentario al DOM
-            document.getElementById('submit-comment').addEventListener('click', function() {
-            const commentText = document.getElementById('new-comment').value;
-            if (commentText.trim() !== '') {
-                const newComment = document.createElement('div');
-                newComment.classList.add('comment');
-                newComment.textContent = commentText;
-                document.querySelector('.testimonial-pixelart').appendChild(newComment);
-                document.getElementById('new-comment').value = ''; // Limpiar el campo de texto
+        let progress = 0;
+        const progressBar = document.getElementById('progress-bar');
+        const loadingText = document.getElementById('loading-text');
+
+        const interval = setInterval(() => {
+            progress += 1;
+            progressBar.style.width = progress + '%';
+            loadingText.textContent = 'Cargando ' + progress + '%';
+
+            if (progress === 100) {
+                clearInterval(interval);
+                document.getElementById('loader').style.display = 'none'; // Ocultar el loader al completar
             }
-        });
-
-        let loadingProgress = 0;
-        const progressBar = document.getElementById("progress-bar");
-        const loadingText = document.getElementById("loading-text");
-
-        // Simulación de carga
-        function simulateLoading() {
-            if (loadingProgress < 100) {
-                loadingProgress++;
-                progressBar.style.width = loadingProgress + "%";
-                loadingText.textContent = "Cargando " + loadingProgress + "%";
-                setTimeout(simulateLoading, 30);
-            } else {
-                document.getElementById("loader").style.display = "none";
-            }
-        }
-
-        simulateLoading();
+        }, 50); // Ajusta el tiempo según necesites
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

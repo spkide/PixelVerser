@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelverse - Cargando...</title>
+    <link rel="shortcut icon" href="/662cda1ea6bdac6afb16973961c2c8d1.ac594b74.gif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  overflow-x: hidden;
+}
+
+#loader {
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.loader-img {
+  width: 150px;
+  height: auto;
+}
+
+.progress-container {
+  background: #222;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  background: #e94560;
+  width: 0%;
+  height: 20px;
+  transition: width .2s;
+}
+
+.navbar {
+  background-color: #1a1a2e;
+  border-bottom: 4px solid #e94560;
+  padding: .8rem 1.5rem;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border: 2px solid #e94560;
+}
+
+.nav-link:hover {
+  color: #e94560 !important;
+}
+
+.hero {
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-background {
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero h1, .hero p {
+  font-size: 1.5rem;
+}
+
+.testimonial-pixelart {
+  background-color: #333;
+  border: 5px solid #1a1a1a;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 0 10px #00000080;
+}
+
+.comment {
+  color: #f1f1f1;
+  background-color: #4a4a4a;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-shadow: 0 0 5px #0003;
+}
+
+.testimonial {
+  background-color: #222;
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  box-shadow: 0 0 10px #0003;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+.comment {
+  color: #fff;
+  font-size: 16px;
+}
+
+.testimonial-name {
+  color: #ddd;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (width <= 767px) {
+  .navbar {
+    padding: .5rem;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .video-background {
+    display: none;
+  }
+
+  .testimonial-pixelart {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .col-md-4, .progress-container {
+    width: 100%;
+  }
+}
+
+@media (width <= 1024px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .progress-container {
+    width: 90%;
+  }
+}
+
+@media (width >= 1025px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .progress-container {
+    width: 80%;
+  }
+}
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Pantalla de carga con barra de progreso -->
+    <div id="loader">
+        <img src="/588a44195922117.66168b374ece8.eb102b5d.gif" alt="Cargando..." class="loader-img">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p id="loading-text">Cargando 0%</p>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pixelverse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Construcciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servidores</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Directos</a></li>
+                            <li><a class="dropdown-item" href="#">Noticias</a></li>
+                            <li><a class="dropdown-item" href="#">Acerca de</a></li>
+                            <li><a class="dropdown-item" href="#">Saber más</a></li>
+                            <li><a class="dropdown-item" href="#">Contáctanos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">Login</a>
+                    <a href="#" class="btn btn-primary">Registro</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Bienvenido a Pixelverse</h1>
+            <p>Explora mundos increíbles y juega con la comunidad.</p>
+            <a href="#" class="btn btn-primary btn-lg">Explorar Juegos</a>
+        </div>
+        <img src="/nv0cg04bnka91.2ef2cc14.gif" alt="">
+    </header>
+
+    <!-- Contenido Principal -->
+    <section class="container mt-5">
+        <h2 class="text-center text-white">Juegos Destacados 2025</h2>
+        <div class="row">
+            <!-- Juego 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/maxresdefault.7fe3e58d.jpg" class="card-img-top" alt="Aeterna Lucis">
+                    <div class="card-body">
+                        <h5 class="card-title">Aeterna Lucis</h5>
+                        <p class="card-text">La esperada secuela de Aeterna Noctis, que expande el universo con nuevas mecánicas de combate y mundos por descubrir. Prepárate para la aventura más desafiante del año.</p>
+                        <a href="#" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Juego 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/starfield-heller.93bc238d.webp" class="card-img-top" alt="Starfield">
+                    <div class="card-body">
+                        <h5 class="card-title">Starfield</h5>
+                        <p class="card-text">El universo de Starfield se expande con nuevas aventuras en el espacio. Explora planetas desconocidos y enfrenta desafíos galácticos en un juego de rol épico.</p>
+                        <a href="#" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Juego 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/opengraph-image.0525d9ff.png" class="card-img-top" alt="Hellblade II">
+                    <div class="card-body">
+                        <h5 class="card-title">Hellblade II: Senua's Saga</h5>
+                        <p class="card-text">Senua regresa para enfrentar sus peores miedos en un mundo lleno de mitos y oscuridad. La secuela de Hellblade promete ser aún más impactante y emocionalmente intensa.</p>
+                        <a href="#" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="container mt-5">
+        <h2 class="text-center text-white">Lo que dicen nuestros usuarios</h2>
+        <div class="testimonial-pixelart">
+            <!-- Testimonio 1 -->
+            <div class="testimonial">
+                <img src="/pepe-watching-tv.11d23066.gif" alt="Jugador 1" class="testimonial-img">
+                <div class="comment" id="comment1">"Un juego increíble, muy divertido y lleno de aventuras."</div>
+                <p class="testimonial-name">spkide</p>
+            </div>
+            
+            <!-- Testimonio 2 -->
+            <div class="testimonial">
+                <img src="/dc7f90b52f8c95e29939b431b93ee0b6.edeaaad0.gif" alt="Jugador 2" class="testimonial-img">
+                <div class="comment" id="comment2">"La comunidad de Pixelverse es lo mejor. ¡Siempre dispuesto a ayudar!"</div>
+                <p class="testimonial-name">game_player42</p>
+            </div>
+    
+            <!-- Testimonio 3 -->
+            <div class="testimonial">
+                <img src="/662cda1ea6bdac6afb16973961c2c8d1.ac594b74.gif" alt="Jugador 3" class="testimonial-img">
+                <div class="comment" id="comment3">"Excelente plataforma, me encanta cómo los desarrolladores interactúan con los jugadores."</div>
+                <p class="testimonial-name">loxan_yt</p>
+            </div>
+    
+            <!-- Testimonio 4 -->
+            <div class="testimonial">
+                <img src="/386337b8629611b35b5a45388be40827.1ab25ecc.jpg" alt="Jugador 4" class="testimonial-img">
+                <div class="comment" id="comment4">"La mejor experiencia de juego que he tenido, los gráficos son impresionantes!"</div>
+                <p class="testimonial-name">gamer_ninja</p>
+            </div>
+            
+            <!-- Testimonio 5 -->
+            <div class="testimonial">
+                <img src="/8a920d5814d6c60ca9edbe200925b8d3.486d48ed.jpg" alt="Jugador 5" class="testimonial-img">
+                <div class="comment" id="comment5">"Una experiencia única y entretenida, ¡no me canso de jugar!"</div>
+                <p class="testimonial-name">raphael_85</p>
+            </div>
+        </div>
+    
+        <!-- Formulario para publicar comentario -->
+        <div class="comment-form">
+            <h4 class="text-white">Publica tu comentario</h4>
+            <textarea id="new-comment" rows="4" placeholder="Escribe tu comentario aquí..." class="form-control"></textarea>
+            <button id="submit-comment" class="btn">Publicar Comentario</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white mt-5 py-4" style="background-color: #1a1a2e">
+        <p>&copy; 2025 Pixelverse. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#" class="mx-2">
+                <img src="/tumblr_nca6tjn3aI1rtbl5vo1_400.34ade028.gif" alt="Twitter" style="width: 30px; height: auto">
+            </a>
+            <a href="#" class="mx-2">
+                <img src="/7677aecd4b27c46.6842a81f.gif" alt="Twitch" style="width: 30px; height: auto">
+            </a>
+            <a href="#" class="mx-2">
+                <img src="/f169e6ecbf0ad35.56205e65.gif" alt="Discord" style="width: 30px; height: auto">
+            </a>
+        </div>
+    </footer>    
+
+    <!-- Script de carga de la barra -->
+    <script>// Función para agregar un nuevo comentario al DOM
+document.getElementById('submit-comment').addEventListener('click', function() {
+    const commentText = document.getElementById('new-comment').value;
+    if (commentText.trim() !== '') {
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.textContent = commentText;
+        document.querySelector('.testimonial-pixelart').appendChild(newComment);
+        document.getElementById('new-comment').value = ''; // Limpiar el campo de texto
+    }
+});
+let loadingProgress = 0;
+const progressBar = document.getElementById("progress-bar");
+const loadingText = document.getElementById("loading-text");
+// Simulación de carga
+function simulateLoading() {
+    if (loadingProgress < 100) {
+        loadingProgress++;
+        progressBar.style.width = loadingProgress + "%";
+        loadingText.textContent = "Cargando " + loadingProgress + "%";
+        setTimeout(simulateLoading, 30);
+    } else document.getElementById("loader").style.display = "none";
+}
+simulateLoading();
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Pixelverse.59712999.js"></script></body>
+</html>

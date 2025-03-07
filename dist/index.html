@@ -69,45 +69,55 @@
 }
 
 .hero {
-  text-align: center;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
-.hero .overlay {
+.overlay {
+  z-index: 1;
   background-color: #00000080;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.hero .content-box {
-  background-color: #fffc;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 600px;
-  padding: 20px;
+.content-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.hero h1 {
-  color: #333;
-  margin-bottom: 10px;
-  font-size: 2.5rem;
+.content-box img {
+  object-fit: cover;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.hero p {
-  color: #666;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-
-.hero .btn {
+.text-overlay {
+  z-index: 2;
+  text-align: center;
   color: #fff;
-  background-color: #007bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-overlay h1, .text-overlay p, .text-overlay a {
+  margin: 0;
+  padding: 10px;
+}
+
+.text-overlay a {
+  color: #fff;
+  background-color: #f60;
   border-radius: 5px;
   padding: 10px 20px;
   text-decoration: none;
@@ -160,53 +170,161 @@
   font-weight: bold;
 }
 
-@media (width <= 767px) {
-  .navbar {
-    padding: .5rem;
-  }
-
-  .hero {
-    height: 50vh;
-  }
-
-  .testimonial-pixelart {
-    margin-bottom: 20px;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
-
-  .col-md-4, .progress-container {
-    width: 100%;
-  }
+.featured-games {
+  background-color: #1a1a2e;
+  padding: 40px 0;
 }
 
-@media (width <= 1024px) {
-  .hero {
-    height: 60vh;
-  }
-
-  .col-md-4 {
-    width: 100%;
-  }
-
-  .progress-container {
-    width: 90%;
-  }
+.featured-games h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
-@media (width >= 1025px) {
-  .hero {
-    height: 70vh;
+.game-card {
+  color: #fff;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform .3s ease-in-out;
+  box-shadow: 0 0 15px #0006;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.game-card h3 {
+  color: #e94560;
+  font-size: 1.5rem;
+}
+
+.game-card p {
+  color: #ccc;
+}
+
+footer {
+  color: #fff;
+  background-color: #333;
+  padding: 30px 0;
+}
+
+footer .container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+footer .container .col-md-6 {
+  font-size: 14px;
+}
+
+footer .social-links {
+  justify-content: flex-end;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+footer .social-links li {
+  display: inline-block;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  display: block;
+}
+
+footer .social-links img {
+  width: 40px;
+  height: 40px;
+  transition: transform .3s, opacity .3s;
+}
+
+footer .social-links img:hover {
+  opacity: .8;
+  transform: scale(1.2);
+}
+
+@media (width <= 768px) {
+  footer .container {
+    text-align: center;
+    flex-direction: column;
   }
 
-  .col-md-4 {
-    width: 33.33%;
+  footer .social-links {
+    justify-content: center;
+    margin-top: 20px;
   }
 
-  .progress-container {
-    width: 80%;
+  footer .social-links li {
+    margin: 0 10px;
+  }
+
+  @media (width <= 767px) {
+    .navbar {
+      padding: .5rem;
+    }
+
+    .hero {
+      height: 50vh;
+    }
+
+    .testimonial-pixelart {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      padding: 0 10px;
+    }
+
+    .col-md-4, .progress-container {
+      width: 100%;
+    }
+
+    .game-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (width <= 1024px) {
+    .hero {
+      height: 60vh;
+    }
+
+    .col-md-4 {
+      width: 100%;
+    }
+
+    .progress-container {
+      width: 90%;
+    }
+  }
+
+  @media (width >= 1025px) {
+    .hero {
+      height: 70vh;
+    }
+
+    .col-md-4 {
+      width: 33.33%;
+    }
+
+    .progress-container {
+      width: 80%;
+    }
   }
 }
 </style>
@@ -224,7 +342,7 @@
     </div>
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pixelverse</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -247,67 +365,142 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-outline-light me-2">Login</a>
-                    <a href="#" class="btn btn-primary">Registro</a>
+                    <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
+                    <a href="#" class="btn btn-outline-light">Registrarse</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="overlay">
-            <div class="content-box">
+<!-- Sección Hero -->
+<section class="hero">
+    <div class="overlay">
+        <div class="content-box">
+            <img src="/nv0cg04bnka91.2ef2cc14.gif" alt="">
+            <div class="text-overlay">
                 <h1>Bienvenido a Pixelverse</h1>
-                <p>Explora mundos increíbles y juega con la comunidad.</p>
-                <a href="#" class="btn btn-primary btn-lg">Explorar Juegos</a>
+                <p>¡El universo de los videojuegos donde todo es posible!</p>
+                <a href="#" class="btn">Explorar Juegos</a>
             </div>
         </div>
-        <img src="/nv0cg04bnka91.2ef2cc14.gif" alt="">
-    </header>    
+    </div>
+</section>
 
-    <!-- Contenido Principal -->
-    <section class="container mt-5">
-        <h2 class="text-center text-white">Juegos Destacados 2025</h2>
+   <!-- Sección de Juegos Destacados -->
+<section class="featured-games">
+    <div class="container">
+        <h2>Juegos Destacados</h2>
         <div class="row">
+            <!-- Juego 1: Civilization VII -->
             <div class="col-md-4">
-                <div class="testimonial-pixelart">
-                    <h4>Testimonios</h4>
-                    <div class="testimonial">
-                        <img src="/6eddc477c7ab5513c5324055cd0e1c69.72086d06.jpg" alt="Imagen 1" class="testimonial-img">
-                        <div>
-                            <p class="comment">¡Pixelverse es una experiencia única y divertida!</p>
-                            <p class="testimonial-name">Juan Pérez</p>
+                <div class="game-card">
+                    <img src="/1376473.df8b7418.jpg" alt="Civilization VII">
+                    <h3>Civilization VII</h3>
+                    <p>Construye y lidera tu civilización a través de los siglos. Un juego de estrategia por turnos que te desafiará a tomar decisiones cruciales.</p>
+                </div>
+            </div>
+            <!-- Juego 2: Aeterna Lucis -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="/capsule_616x353.fea0d5ad.jpg" alt="Aeterna Lucis">
+                    <h3>Aeterna Lucis</h3>
+                    <p>Embárcate en una nueva aventura metroidvania con la Reina de la Luz, enfrentando oscuros enemigos y descubriendo secretos antiguos.</p>
+                </div>
+            </div>
+            <!-- Juego 3: Monster Hunter Wilds -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="/wilds-wallpaper-v0-ii61sry7705c1.5206cb2a.webp" alt="Monster Hunter Wilds">
+                    <h3>Monster Hunter Wilds</h3>
+                    <p>Únete a la caza de monstruos en un mundo abierto lleno de desafíos. Prepárate para enfrentar las criaturas más imponentes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Juego 4: Grand Theft Auto 6 -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="/the-full-gta-vi-reveal-artwork-directly-from-rockstars-v0-dkj530ewih4c1.06fbbd77.webp" alt="Grand Theft Auto 6">
+                    <h3>Grand Theft Auto VI</h3>
+                    <p>La sexta entrega de esta icónica saga, ofreciendo un mundo abierto más grande y detallado. Prepárate para caos y acción en la ciudad más vibrante.</p>
+                </div>
+            </div>
+            <!-- Juego 5: eFootball 2025 -->
+            <div class="col-md-4">
+                <div class="game-card">
+                    <img src="/wp14521068.e6cbe8b6.webp" alt="eFootball 2025">
+                    <h3>eFootball 2025</h3>
+                    <p>La nueva entrega del popular simulador de fútbol, con mejoras en la jugabilidad y gráficos ultra realistas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonios -->
+    <section>
+        <div class="container">
+            <h2 class="text-center my-5">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-pixelart">
+                        <h4>Testimonios</h4>
+                        <div class="testimonial">
+                            <img src="/386337b8629611b35b5a45388be40827.1ab25ecc.jpg" alt="Imagen 1" class="testimonial-img">
+                            <div>
+                                <p class="comment">¡Pixelverse es una experiencia única y divertida!</p>
+                                <p class="testimonial-name">spkide</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="testimonial-pixelart">
-                    <h4>Testimonios</h4>
-                    <div class="testimonial">
-                        <img src="/8a920d5814d6c60ca9edbe200925b8d3.486d48ed.jpg" alt="Imagen 2" class="testimonial-img">
-                        <div>
-                            <p class="comment">¡Un gran lugar para disfrutar con amigos!</p>
-                            <p class="testimonial-name">María López</p>
+                <div class="col-md-4">
+                    <div class="testimonial-pixelart">
+                        <h4>Testimonios</h4>
+                        <div class="testimonial">
+                            <img src="/662cda1ea6bdac6afb16973961c2c8d1.ac594b74.gif" alt="Imagen 2" class="testimonial-img">
+                            <div>
+                                <p class="comment">¡Un gran lugar para disfrutar con amigos!</p>
+                                <p class="testimonial-name">María López</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="testimonial-pixelart">
-                    <h4>Testimonios</h4>
-                    <div class="testimonial">
-                        <img src="/dc7f90b52f8c95e29939b431b93ee0b6.edeaaad0.gif" alt="Imagen 3" class="testimonial-img">
-                        <div>
-                            <p class="comment">Una plataforma innovadora con muchos juegos geniales.</p>
-                            <p class="testimonial-name">Carlos García</p>
+                <div class="col-md-4">
+                    <div class="testimonial-pixelart">
+                        <h4>Testimonios</h4>
+                        <div class="testimonial">
+                            <img src="/pepe-watching-tv.11d23066.gif" alt="Imagen 3" class="testimonial-img">
+                            <div>
+                                <p class="comment">Una plataforma innovadora con muchos juegos geniales.</p>
+                                <p class="testimonial-name">Carlos García</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 PIXELVERSE. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-links">
+                            <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="/tumblr_nca6tjn3aI1rtbl5vo1_400.34ade028.gif" alt="Twitter"></a></li>
+                            <li><a href="https://twitch.tv" target="_blank" aria-label="Twitch"><img src="/f169e6ecbf0ad35.56205e65.gif" alt="Twitch"></a></li>
+                            <li><a href="https://discord.com" target="_blank" aria-label="Discord"><img src="/7677aecd4b27c46.6842a81f.gif" alt="Discord"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
 
     <script>let progress = 0;
 const progressBar = document.getElementById('progress-bar');

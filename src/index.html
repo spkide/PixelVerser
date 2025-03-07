@@ -71,48 +71,58 @@
         /* Hero section */
         .hero {
             position: relative;
-            text-align: center;
-        }
+            height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+            overflow: hidden;
+         }
 
-        .hero .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para el fondo */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+                z-index: 1;
+            }
 
-        .hero .content-box {
-            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
-            padding: 20px;
-            border-radius: 10px;
-            width: 80%; /* Ajusta el ancho según sea necesario */
-            max-width: 600px; /* Limita el ancho máximo */
-        }
+            .content-box {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
+            .content-box img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0; /* Asegura que la imagen esté en el fondo */
+            }
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
+            .text-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                text-align: center;
+                color: white;
+            }
 
-        .hero .btn {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+            .text-overlay h1, .text-overlay p, .text-overlay a {
+                margin: 0;
+                padding: 10px;
+            }
+
+            .text-overlay a {
+                text-decoration: none;
+                background-color: #ff6600;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
 
         /* Testimonios */
         .testimonial-pixelart {
@@ -203,6 +213,76 @@
             color: #ccc;
         }
 
+        /* Estilo general del footer */
+        footer {
+            background-color: #333; /* Fondo oscuro para el footer */
+            color: #fff;
+            padding: 30px 0; /* Mayor espacio para un diseño limpio */
+        }
+
+        /* Contenedor del footer */
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto; /* Centra el contenedor */
+            display: flex;
+            justify-content: space-between; /* Divide el espacio entre el texto y los íconos */
+            align-items: center;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+        }
+
+        /* Estilo para el texto en la parte izquierda */
+        footer .container .col-md-6 {
+            font-size: 14px; /* Tamaño pequeño para el texto de derechos reservados */
+        }
+
+        /* Estilo para los enlaces de redes sociales */
+        footer .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px; /* Espacio entre los íconos */
+        }
+
+        footer .social-links li {
+            display: inline-block;
+        }
+
+        footer .social-links a {
+            text-decoration: none;
+            display: block;
+        }
+
+        footer .social-links img {
+            width: 40px; /* Tamaño de los íconos */
+            height: 40px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* Efecto de animación cuando se pasa el ratón sobre los íconos */
+        footer .social-links img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño de los íconos */
+            opacity: 0.8; /* Opacidad cuando pasa el mouse */
+        }
+
+        /* Estilos responsivos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            footer .container {
+                flex-direction: column; /* Coloca el texto y los íconos en una columna */
+                text-align: center;
+            }
+            
+            footer .social-links {
+                justify-content: center; /* Centra los íconos en pantallas pequeñas */
+                margin-top: 20px; /* Espacio adicional entre los elementos */
+            }
+            
+            footer .social-links li {
+                margin: 0 10px; /* Se reduce el margen para móviles */
+            }
+            
+
         /* Media Queries para Responsividad */
         @media (max-width: 767px) {
             .navbar {
@@ -266,7 +346,7 @@
     </div>
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pixelverse</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -289,22 +369,26 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-outline-light">Iniciar sesión</a>
+                    <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
+                    <a href="#" class="btn btn-outline-light">Registrarse</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Sección Hero -->
-    <section class="hero">
-        <div class="overlay">
-            <div class="content-box">
+<!-- Sección Hero -->
+<section class="hero">
+    <div class="overlay">
+        <div class="content-box">
+            <img src="img/nv0cg04bnka91.gif" alt="">
+            <div class="text-overlay">
                 <h1>Bienvenido a Pixelverse</h1>
                 <p>¡El universo de los videojuegos donde todo es posible!</p>
                 <a href="#" class="btn">Explorar Juegos</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
    <!-- Sección de Juegos Destacados -->
 <section class="featured-games">
@@ -401,6 +485,26 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 PIXELVERSE. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-links">
+                            <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="img/tumblr_nca6tjn3aI1rtbl5vo1_400.gif" alt="Twitter"></a></li>
+                            <li><a href="https://twitch.tv" target="_blank" aria-label="Twitch"><img src="img/f169e6ecbf0ad35.gif" alt="Twitch"></a></li>
+                            <li><a href="https://discord.com" target="_blank" aria-label="Discord"><img src="img/7677aecd4b27c46.gif" alt="Discord"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
 
     <script>
         let progress = 0;

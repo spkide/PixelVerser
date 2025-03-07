@@ -282,55 +282,46 @@
                 margin: 0 10px; /* Se reduce el margen para móviles */
             }
             
+            /* Media Queries para Responsividad */
+            @media (max-width: 768px) {
+                footer .container {
+                    flex-direction: column; /* Coloca el texto y los íconos en una columna */
+                    text-align: center;
+                }
+                footer .social-links {
+                    justify-content: center; /* Centra los íconos en pantallas pequeñas */
+                    margin-top: 20px; /* Espacio adicional entre los elementos */
+                }
+                footer .social-links li {
+                    margin: 0 10px; /* Se reduce el margen para móviles */
+                }
+                /* Otros estilos */
+            }
 
-        /* Media Queries para Responsividad */
-        @media (max-width: 767px) {
-            .navbar {
-                padding: 0.5rem;
+            @media (max-width: 1024px) {
+                .hero {
+                    height: 60vh;
+                }
+                .col-md-4 {
+                    width: 100%;
+                }
+                .progress-container {
+                    width: 90%;
+                }
             }
-            .hero {
-                height: 50vh;
-            }
-            .testimonial-pixelart {
-                margin-bottom: 20px;
-            }
-            .container {
-                padding: 0 10px;
-            }
-            .col-md-4 {
-                width: 100%;
-            }
-            .progress-container {
-                width: 100%;
-            }
-            .game-card {
-                margin-bottom: 20px;
-            }
-        }
 
-        @media (max-width: 1024px) {
-            .hero {
-                height: 60vh;
+            @media (min-width: 1025px) {
+                .hero {
+                    height: 70vh;
+                }
+                .col-md-4 {
+                    width: 33.33%;
+                }
+                .progress-container {
+                    width: 80%;
+                }
             }
-            .col-md-4 {
-                width: 100%;
-            }
-            .progress-container {
-                width: 90%;
-            }
-        }
 
-        @media (min-width: 1025px) {
-            .hero {
-                height: 70vh;
-            }
-            .col-md-4 {
-                width: 33.33%;
-            }
-            .progress-container {
-                width: 80%;
-            }
-        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -354,8 +345,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Construcciones</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="construcciones.html">Construcciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Servidores</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
@@ -505,22 +496,23 @@
         </footer>
 
 
-
     <script>
-        let progress = 0;
-        const progressBar = document.getElementById('progress-bar');
-        const loadingText = document.getElementById('loading-text');
+         let progress = 0;
+        let progressBar = document.getElementById('progress-bar');
+        let loadingText = document.getElementById('loading-text');
 
-        const interval = setInterval(() => {
-            progress += 1;
+        function updateProgress() {
+            progress += 10;
             progressBar.style.width = progress + '%';
             loadingText.textContent = 'Cargando ' + progress + '%';
-
-            if (progress === 100) {
-                clearInterval(interval);
-                document.getElementById('loader').style.display = 'none'; // Ocultar el loader al completar
+            if (progress < 100) {
+                setTimeout(updateProgress, 500);
+            } else {
+                document.getElementById('loader').style.display = 'none'; // Ocultar loader cuando termine
             }
-        }, 50); // Ajusta el tiempo según necesites
+        }
+
+        window.onload = updateProgress;
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

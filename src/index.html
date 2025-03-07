@@ -382,51 +382,37 @@
 </section>
 
    <!-- Sección de Juegos Destacados -->
+   <!-- Sección de Juegos Destacados -->
 <section class="featured-games">
-    <div class="container">
-        <h2>Juegos Destacados</h2>
-        <div class="row">
-            <!-- Juego 1: Civilization VII -->
-            <div class="col-md-4">
-                <div class="game-card">
-                    <img src="img/1376473.jpg" alt="Civilization VII">
-                    <h3>Civilization VII</h3>
-                    <p>Construye y lidera tu civilización a través de los siglos. Un juego de estrategia por turnos que te desafiará a tomar decisiones cruciales.</p>
-                </div>
-            </div>
-            <!-- Juego 2: Aeterna Lucis -->
-            <div class="col-md-4">
-                <div class="game-card">
-                    <img src="img/capsule_616x353.jpg" alt="Aeterna Lucis">
-                    <h3>Aeterna Lucis</h3>
-                    <p>Embárcate en una nueva aventura metroidvania con la Reina de la Luz, enfrentando oscuros enemigos y descubriendo secretos antiguos.</p>
-                </div>
-            </div>
-            <!-- Juego 3: Monster Hunter Wilds -->
-            <div class="col-md-4">
-                <div class="game-card">
-                    <img src="img/wilds-wallpaper-v0-ii61sry7705c1.webp" alt="Monster Hunter Wilds">
-                    <h3>Monster Hunter Wilds</h3>
-                    <p>Únete a la caza de monstruos en un mundo abierto lleno de desafíos. Prepárate para enfrentar las criaturas más imponentes.</p>
-                </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="game-card">
+                <img src="img/maxresdefault.jpg" alt="Juego 1">
+                <h3>Aeterna Lucis</h3>
+                <p>Secuela del aclamado metroidvania *Aeterna Noctis*. ¡Explora nuevos mundos con la Reina de la Luz! Estará disponible en Nintendo Switch, PC, PlayStation y Xbox en septiembre de 2025.</p>
             </div>
         </div>
-        <div class="row">
-            <!-- Juego 4: Grand Theft Auto 6 -->
-            <div class="col-md-4">
-                <div class="game-card">
-                    <img src="img/the-full-gta-vi-reveal-artwork-directly-from-rockstars-v0-dkj530ewih4c1.webp" alt="Grand Theft Auto 6">
-                    <h3>Grand Theft Auto VI</h3>
-                    <p>La sexta entrega de esta icónica saga, ofreciendo un mundo abierto más grande y detallado. Prepárate para caos y acción en la ciudad más vibrante.</p>
-                </div>
+        <div class="col-md-4">
+            <div class="game-card">
+                <img src="img/giy2e4txqaa1qgz.jpeg" alt="Juego 2">
+                <h3>Marvel 1943: Rise of Hydra</h3>
+                <p>Un juego de acción y aventura donde el Capitán América y Black Panther enfrentan a Hydra en la Segunda Guerra Mundial. Lanzamiento previsto para 2025.</p>
             </div>
-            <!-- Juego 5: eFootball 2025 -->
-            <div class="col-md-4">
-                <div class="game-card">
-                    <img src="img/wp14521068.webp" alt="eFootball 2025">
-                    <h3>eFootball 2025</h3>
-                    <p>La nueva entrega del popular simulador de fútbol, con mejoras en la jugabilidad y gráficos ultra realistas.</p>
-                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="game-card">
+                <img src="img/1376473.jpg" alt="Juego 3">
+                <h3>Civilization VII</h3>
+                <p>La nueva entrega de la famosa serie de estrategia. Lidera civilizaciones desde sus inicios hasta el dominio global. ¡Disponible el 11 de febrero de 2025 en múltiples plataformas!</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="game-card">
+                <img src="img/wilds-wallpaper-v0-ii61sry7705c1.webp" alt="Juego 4">
+                <h3>Monster Hunter Wilds</h3>
+                <p>Enfréntate a monstruos colosales en un mundo salvaje. Lanzamiento el 28 de febrero de 2025. ¡Prepárate para una experiencia épica de caza!</p>
             </div>
         </div>
     </div>
@@ -496,24 +482,25 @@
         </footer>
 
 
-    <script>
-         let progress = 0;
-        let progressBar = document.getElementById('progress-bar');
-        let loadingText = document.getElementById('loading-text');
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    // Función para actualizar la barra de progreso y texto
+    let progress = 0;
+    const progressBar = document.getElementById("progress-bar");
+    const loadingText = document.getElementById("loading-text");
 
-        function updateProgress() {
-            progress += 10;
-            progressBar.style.width = progress + '%';
-            loadingText.textContent = 'Cargando ' + progress + '%';
-            if (progress < 100) {
-                setTimeout(updateProgress, 500);
-            } else {
-                document.getElementById('loader').style.display = 'none'; // Ocultar loader cuando termine
-            }
+    const interval = setInterval(function() {
+        if (progress < 100) {
+            progress += 1;
+            progressBar.style.width = progress + "%";
+            loadingText.innerText = "Cargando " + progress + "%";
+        } else {
+            clearInterval(interval);
+            document.getElementById("loader").style.display = "none";  // Ocultar pantalla de carga
         }
-
-        window.onload = updateProgress;
-    </script>
+    }, 50); // Aumentar el progreso cada 50 ms
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

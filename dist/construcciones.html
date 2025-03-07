@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelverse - Construcciones</title>
+    <link rel="shortcut icon" href="/dc7f90b52f8c95e29939b431b93ee0b6.edeaaad0.gif" type="image/x-icon">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Enlace a tu archivo SCSS (o CSS si lo compilaste) -->
+    <link rel="stylesheet" href="/construcciones.044e704e.css">
+    <style>.loader {
+  z-index: 9999;
+}
+
+.loader img {
+  width: 100px;
+  height: auto;
+}
+
+.construcciones {
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.construcciones h1, .construcciones p {
+  animation: 1s ease-in-out fadeIn;
+}
+</style>
+</head>
+<body>
+    <!-- Loader (Centro de Carga) -->
+    <div id="loader" class="loader d-flex justify-content-center align-items-center position-fixed w-100 h-100 bg-light">
+        <img src="/588a44195922117.66168b374ece8.eb102b5d.gif" alt="Cargando...">
+    </div>
+
+    <!-- Barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pixelverse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/construcciones.html">Construcciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servidores</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Directos</a></li>
+                            <li><a class="dropdown-item" href="#">Noticias</a></li>
+                            <li><a class="dropdown-item" href="#">Acerca de</a></li>
+                            <li><a class="dropdown-item" href="#">Saber más</a></li>
+                            <li><a class="dropdown-item" href="#">Contáctanos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
+                    <a href="#" class="btn btn-outline-light">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div id="main-content" style="display: none">
+        <div class="container mt-5">
+            <section class="construcciones">
+                <h1 class="text-center">Construcciones en Pixelverse</h1>
+                <p class="text-center">¡Explora las increíbles construcciones de nuestro universo!</p>
+                <!-- Aquí puedes agregar más contenido de construcciones -->
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>window.onload = function() {
+    // Después de que la página haya cargado, ocultamos el loader y mostramos el contenido principal
+    setTimeout(function() {
+        document.getElementById("loader").style.display = "none"; // Ocultamos el loader
+        document.getElementById("main-content").style.display = "block"; // Mostramos el contenido principal
+    }, 3000); // El loader se mostrará durante 3 segundos
+};
+
+</script>
+<script src="/construcciones.4180ddb1.js"></script></body>
+</html>

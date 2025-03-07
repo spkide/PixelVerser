@@ -73,52 +73,104 @@
 }
 
 .welcome-img {
-  object-fit: cover;
+  background-image: url("7517ec4812af7eaa7b36b929dc045d95.a48fc448.gif");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 60vh;
+  display: flex;
   position: relative;
 }
 
 .welcome-text {
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #00000080;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.welcome-text h1 {
   color: #ffb84d;
   text-shadow: 2px 2px 5px #000000b3;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 3rem;
 }
 
 .welcome-text p {
-  color: #e94560;
-  text-shadow: 1px 1px 3px #00000080;
+  color: #a6e22e;
+  text-shadow: 2px 2px 5px #000000b3;
+  font-size: 1.5rem;
+}
+
+.minecraft-builds {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 0;
 }
 
 .minecraft-builds h2 {
   color: #ffb84d;
-  text-align: center;
   margin-top: 50px;
+  font-size: 2rem;
 }
 
-.build-card {
+footer {
   color: #fff;
-  text-align: center;
-  background-color: #222;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px #00000080;
+  background-color: #333;
+  padding: 30px 0;
 }
 
-.build-card img {
-  object-fit: cover;
-  border-radius: 8px;
-  width: 100%;
-  height: 200px;
+footer .container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
 }
 
-@media (width <= 768px) {
+footer .container .col-md-6 {
+  font-size: 14px;
+}
+
+footer .social-links {
+  justify-content: flex-end;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+footer .social-links li {
+  display: inline-block;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  display: block;
+}
+
+footer .social-links img {
+  width: 40px;
+  height: 40px;
+  transition: transform .3s, opacity .3s;
+}
+
+footer .social-links img:hover {
+  opacity: .8;
+  transform: scale(1.2);
+}
+
+@media screen and (width <= 768px) {
+  .welcome-img {
+    height: 50vh;
+  }
+
   .welcome-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .welcome-text p {
@@ -126,21 +178,25 @@
   }
 
   .minecraft-builds h2 {
-    font-size: 2rem;
-  }
-
-  .build-card img {
-    height: 150px;
+    font-size: 1.5rem;
   }
 }
 
-@media (width <= 576px) {
+@media screen and (width <= 480px) {
+  .welcome-img {
+    height: 40vh;
+  }
+
   .welcome-text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .welcome-text p {
     font-size: 1rem;
+  }
+
+  .minecraft-builds h2 {
+    font-size: 1.2rem;
   }
 }
 </style>
@@ -167,7 +223,7 @@
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="/construcciones.html">Construcciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Servidores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/servidores.html">Servidores</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
                         <ul class="dropdown-menu">
@@ -188,27 +244,40 @@
     </nav>
 
     <!-- Contenido de la página -->
-    <div id="main-content" style="display: none">
-        <div class="container mt-5">
-            <section class="construcciones">
-                <div class="welcome-img">
-                    <img src="/7517ec4812af7eaa7b36b929dc045d95.a48fc448.gif" alt="Bienvenida">
-                    <div class="welcome-text">
-                        <h1>Construcciones en Pixelverse</h1>
-                        <p>¡Explora las increíbles construcciones de nuestro universo!</p>
-                    </div>
-                </div>
-                <!-- Aquí puedes agregar más contenido de construcciones -->
-            </section>
+    <!-- Sección de bienvenida con imagen -->
+    <div class="welcome-img">
+        <div class="welcome-text">
+            <h1>Construcciones en Pixelverse</h1>
+            <p>¡Explora las increíbles construcciones de nuestro universo!</p>
         </div>
     </div>
 
-    <section class="minecraft-builds">
-        <h2>Construcciones Épicas de Minecraft</h2>
-        <div id="builds-list" class="row">
-            <!-- Aquí se mostrarán las construcciones -->
+    <!-- Sección de videos de construcción -->
+    <section id="pinterest-videos" class="minecraft-builds" style="margin-top: 20px; padding: 20px 0">
+        <h2>Videos de Construcción</h2>
+        <div id="videos-container" class="row">
+            <!-- Los videos serán cargados aquí desde Pinterest -->
         </div>
     </section>
+
+        <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 PIXELVERSE. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-links">
+                        <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="/tumblr_nca6tjn3aI1rtbl5vo1_400.34ade028.gif" alt="Twitter"></a></li>
+                        <li><a href="https://twitch.tv" target="_blank" aria-label="Twitch"><img src="/f169e6ecbf0ad35.56205e65.gif" alt="Twitch"></a></li>
+                        <li><a href="https://discord.com" target="_blank" aria-label="Discord"><img src="/7677aecd4b27c46.6842a81f.gif" alt="Discord"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -227,23 +296,25 @@ const interval = setInterval(function() {
         document.getElementById("main-content").style.display = "block"; // Mostrar contenido
     }
 }, 50); // Aumentar el progreso cada 50 ms
-// Usando la API de MCAPI para obtener información sobre construcciones de Minecraft
-fetch('https://mcapi.us/server/status?ip=tu-servidor-minecraft&port=25565').then((response)=>response.json()).then((data)=>{
-    const buildsList = document.getElementById('builds-list');
-    if (data.online) // Mostrar información sobre las construcciones en el servidor
-    buildsList.innerHTML = `
-                        <div class="col-md-4">
+// Función para cargar videos de Pinterest
+const apiKey = 'TU_API_KEY'; // Sustituye con tu clave API
+const endpoint = `https://api.pinterest.com/v1/boards/{board_id}/pins/?access_token=${apiKey}`;
+fetch(endpoint).then((response)=>response.json()).then((data)=>{
+    const videosContainer = document.getElementById("videos-container");
+    data.data.forEach((pin)=>{
+        if (pin.type === "video") {
+            const videoElement = document.createElement("div");
+            videoElement.classList.add("col-md-4", "mb-4");
+            videoElement.innerHTML = `
                             <div class="build-card">
-                                <img src="${data.image_url}" alt="Construcci\xf3n Minecraft">
-                                <h3>${data.server_name}</h3>
-                                <p>Jugadores en l\xednea: ${data.players.now}</p>
+                                <iframe src="${pin.video.original.url}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p>${pin.note}</p>
                             </div>
-                        </div>
-                    `;
-    else buildsList.innerHTML = "<p>El servidor no est\xe1 disponible actualmente.</p>";
-}).catch((error)=>{
-    console.error('Error fetching Minecraft builds:', error);
-});
+                        `;
+            videosContainer.appendChild(videoElement);
+        }
+    });
+}).catch((error)=>console.log("Error al cargar los videos:", error));
 
 </script>
 <script src="/construcciones.4180ddb1.js"></script></body>

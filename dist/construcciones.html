@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,154 @@
     <!-- Enlace a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-- Enlace a tu archivo SCSS (o CSS si lo compilaste) -->
     <link rel="stylesheet" href="/construcciones.044e704e.css">
-    <style>.loader {
-  z-index: 9999;
+    <style>body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  overflow-x: hidden;
 }
 
-.loader img {
-  width: 100px;
+#loader {
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.loader-img {
+  width: 150px;
   height: auto;
 }
 
-.construcciones {
+.progress-container {
+  background: #222;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  background: #e94560;
+  width: 0%;
+  height: 20px;
+  transition: width .2s;
+}
+
+.navbar {
+  background-color: #1a1a2e;
+  border-bottom: 4px solid #e94560;
+  padding: .8rem 1.5rem;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border: 2px solid #e94560;
+}
+
+.nav-link:hover {
+  color: #e94560 !important;
+}
+
+.welcome-img {
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.welcome-text {
+  color: #ffb84d;
+  text-shadow: 2px 2px 5px #000000b3;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-text p {
+  color: #e94560;
+  text-shadow: 1px 1px 3px #00000080;
+}
+
+.minecraft-builds h2 {
+  color: #ffb84d;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.build-card {
+  color: #fff;
+  text-align: center;
+  background-color: #222;
+  border-radius: 8px;
   padding: 20px;
+  box-shadow: 0 4px 8px #00000080;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+.build-card img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+}
+
+@media (width <= 768px) {
+  .welcome-text h1 {
+    font-size: 2.5rem;
   }
 
-  100% {
-    opacity: 1;
+  .welcome-text p {
+    font-size: 1.2rem;
+  }
+
+  .minecraft-builds h2 {
+    font-size: 2rem;
+  }
+
+  .build-card img {
+    height: 150px;
   }
 }
 
-.construcciones h1, .construcciones p {
-  animation: 1s ease-in-out fadeIn;
+@media (width <= 576px) {
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+  }
 }
 </style>
 </head>
+
 <body>
-    <!-- Loader (Centro de Carga) -->
-    <div id="loader" class="loader d-flex justify-content-center align-items-center position-fixed w-100 h-100 bg-light">
-        <img src="/588a44195922117.66168b374ece8.eb102b5d.gif" alt="Cargando...">
+    <!-- Pantalla de carga con barra de progreso -->
+    <div id="loader">
+        <img src="/588a44195922117.66168b374ece8.eb102b5d.gif" alt="Cargando..." class="loader-img">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p id="loading-text">Cargando 0%</p>
     </div>
 
     <!-- Barra de navegación -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pixelverse</a>
@@ -81,23 +191,61 @@
     <div id="main-content" style="display: none">
         <div class="container mt-5">
             <section class="construcciones">
-                <h1 class="text-center">Construcciones en Pixelverse</h1>
-                <p class="text-center">¡Explora las increíbles construcciones de nuestro universo!</p>
+                <div class="welcome-img">
+                    <img src="/7517ec4812af7eaa7b36b929dc045d95.a48fc448.gif" alt="Bienvenida">
+                    <div class="welcome-text">
+                        <h1>Construcciones en Pixelverse</h1>
+                        <p>¡Explora las increíbles construcciones de nuestro universo!</p>
+                    </div>
+                </div>
                 <!-- Aquí puedes agregar más contenido de construcciones -->
             </section>
         </div>
     </div>
 
+    <section class="minecraft-builds">
+        <h2>Construcciones Épicas de Minecraft</h2>
+        <div id="builds-list" class="row">
+            <!-- Aquí se mostrarán las construcciones -->
+        </div>
+    </section>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>window.onload = function() {
-    // Después de que la página haya cargado, ocultamos el loader y mostramos el contenido principal
-    setTimeout(function() {
-        document.getElementById("loader").style.display = "none"; // Ocultamos el loader
-        document.getElementById("main-content").style.display = "block"; // Mostramos el contenido principal
-    }, 3000); // El loader se mostrará durante 3 segundos
-};
+    <script>// Función para actualizar la barra de progreso y texto
+let progress = 0;
+const progressBar = document.getElementById("progress-bar");
+const loadingText = document.getElementById("loading-text");
+const interval = setInterval(function() {
+    if (progress < 100) {
+        progress += 1;
+        progressBar.style.width = progress + "%";
+        loadingText.innerText = "Cargando " + progress + "%";
+    } else {
+        clearInterval(interval);
+        document.getElementById("loader").style.display = "none"; // Ocultar pantalla de carga
+        document.getElementById("main-content").style.display = "block"; // Mostrar contenido
+    }
+}, 50); // Aumentar el progreso cada 50 ms
+// Usando la API de MCAPI para obtener información sobre construcciones de Minecraft
+fetch('https://mcapi.us/server/status?ip=tu-servidor-minecraft&port=25565').then((response)=>response.json()).then((data)=>{
+    const buildsList = document.getElementById('builds-list');
+    if (data.online) // Mostrar información sobre las construcciones en el servidor
+    buildsList.innerHTML = `
+                        <div class="col-md-4">
+                            <div class="build-card">
+                                <img src="${data.image_url}" alt="Construcci\xf3n Minecraft">
+                                <h3>${data.server_name}</h3>
+                                <p>Jugadores en l\xednea: ${data.players.now}</p>
+                            </div>
+                        </div>
+                    `;
+    else buildsList.innerHTML = "<p>El servidor no est\xe1 disponible actualmente.</p>";
+}).catch((error)=>{
+    console.error('Error fetching Minecraft builds:', error);
+});
 
 </script>
 <script src="/construcciones.4180ddb1.js"></script></body>
+
 </html>

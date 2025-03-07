@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,6 @@
     <!-- Enlace a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-- Enlace a tu archivo SCSS (o CSS si lo compilaste) -->
     <link rel="stylesheet" href="scss/styles.scss">
     <style>
         /* Estilos generales */
@@ -36,6 +36,7 @@
             color: #fff;
             text-align: center;
         }
+
         .loader-img {
             width: 150px;
             height: auto;
@@ -49,6 +50,7 @@
             border-radius: 10px;
             margin-top: 20px;
         }
+
         .progress-bar {
             width: 0%;
             height: 20px;
@@ -62,19 +64,98 @@
             border-bottom: 4px solid #e94560;
             padding: 0.8rem 1.5rem;
         }
-        .navbar-brand, .nav-link {
+
+        .navbar-brand,
+        .nav-link {
             color: #fff !important;
         }
+
         .navbar-toggler {
             border: 2px solid #e94560;
         }
+
         .nav-link:hover {
             color: #e94560 !important;
         }
+
+        /* Estilos para la imagen de bienvenida */
+        .welcome-img {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffb84d; /* Color amarillo dorado para el título */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .welcome-text p {
+            color: #e94560; /* Color rojo rosado para el párrafo */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilos para la sección de construcciones */
+        .minecraft-builds h2 {
+            color: #ffb84d;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .build-card {
+            background-color: #222;
+            border-radius: 8px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .build-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .welcome-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .welcome-text p {
+                font-size: 1.2rem;
+            }
+
+            .minecraft-builds h2 {
+                font-size: 2rem;
+            }
+
+            .build-card img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .welcome-text h1 {
+                font-size: 2rem;
+            }
+
+            .welcome-text p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <!-- Loader (Centro de Carga) -->
     <!-- Pantalla de carga con barra de progreso -->
     <div id="loader">
         <img src="img/588a44195922117.66168b374ece8.gif" alt="Cargando..." class="loader-img">
@@ -85,11 +166,11 @@
     </div>
 
     <!-- Barra de navegación -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pixelverse</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -98,7 +179,8 @@
                     <li class="nav-item"><a class="nav-link" href="construcciones.html">Construcciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Servidores</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Más</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Directos</a></li>
                             <li><a class="dropdown-item" href="#">Noticias</a></li>
@@ -120,31 +202,54 @@
     <div id="main-content" style="display: none;">
         <div class="container mt-5">
             <section class="construcciones">
-                <h1 class="text-center">Construcciones en Pixelverse</h1>
-                <p class="text-center">¡Explora las increíbles construcciones de nuestro universo!</p>
+                <div class="welcome-img">
+                    <img src="img/7517ec4812af7eaa7b36b929dc045d95.gif" alt="Bienvenida">
+                    <div class="welcome-text">
+                        <h1>Construcciones en Pixelverse</h1>
+                        <p>¡Explora las increíbles construcciones de nuestro universo!</p>
+                    </div>
+                </div>
                 <!-- Aquí puedes agregar más contenido de construcciones -->
             </section>
         </div>
     </div>
 
+    <section class="minecraft-builds">
+        <div class="server-status">
+            My awesome server is currently <span class="server-online"></span>!
+        </div>        
+    </section>
+
     <!-- Scripts -->
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-            // Función para actualizar la barra de progreso y texto
-            let progress = 0;
-            const progressBar = document.getElementById("progress-bar");
-            const loadingText = document.getElementById("loading-text");
+        // Función para actualizar la barra de progreso y texto
+        let progress = 0;
+        const progressBar = document.getElementById("progress-bar");
+        const loadingText = document.getElementById("loading-text");
 
-            const interval = setInterval(function() {
-                if (progress < 100) {
-                    progress += 1;
-                    progressBar.style.width = progress + "%";
-                    loadingText.innerText = "Cargando " + progress + "%";
-                } else {
-                    clearInterval(interval);
-                    document.getElementById("loader").style.display = "none";  // Ocultar pantalla de carga
+        const interval = setInterval(function () {
+            if (progress < 100) {
+                progress += 1;
+                progressBar.style.width = progress + "%";
+                loadingText.innerText = "Cargando " + progress + "%";
+            } else {
+                clearInterval(interval);
+                document.getElementById("loader").style.display = "none"; // Ocultar pantalla de carga
+                document.getElementById("main-content").style.display = "block"; // Mostrar contenido
+            }
+        }, 50); // Aumentar el progreso cada 50 ms
+        MinecraftAPI.getServerStatus('s.nerd.nu', {
+        port: 25565 // optional, only if you need a custom port
+            }, function (err, status) {
+                if (err) {
+                    return document.querySelector('.server-status').innerHTML = 'Error loading status';
                 }
-            }, 50); // Aumentar el progreso cada 50 ms
+
+                // you can change these to your own message!
+                document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+            });
     </script>
 </body>
 </html>

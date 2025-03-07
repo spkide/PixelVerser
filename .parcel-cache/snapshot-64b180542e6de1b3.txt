@@ -1,13 +1,16 @@
-4882
-79/home/spkide/Documents/Pixelverse1/Pixelverse/dist/7677aecd4b27c46.6842a81f.gif1741314246409019523 0
-97/home/spkide/Documents/Pixelverse1/Pixelverse/dist/wilds-wallpaper-v0-ii61sry7705c1.5206cb2a.webp1741314246773024806 0
-73/home/spkide/Documents/Pixelverse1/Pixelverse/dist/Pixelverse.59712999.js1741314246487020655 0
+4889
+82/home/spkide/Documents/Pixelverse1/Pixelverse/dist/construcciones.044e704e.css.map1741314825651030060 0
+79/home/spkide/Documents/Pixelverse1/Pixelverse/dist/7677aecd4b27c46.6842a81f.gif1741314825412025235 0
+70/home/spkide/Documents/Pixelverse1/Pixelverse/dist/construcciones.html1741314825696030969 0
+97/home/spkide/Documents/Pixelverse1/Pixelverse/dist/wilds-wallpaper-v0-ii61sry7705c1.5206cb2a.webp1741314825573028485 0
+73/home/spkide/Documents/Pixelverse1/Pixelverse/dist/Pixelverse.59712999.js1741314825432025638 0
 96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/8a920d5814d6c60ca9edbe200925b8d3.486d48ed.jpg1741312565754571467 0
-71/home/spkide/Documents/Pixelverse1/Pixelverse/dist/1376473.df8b7418.jpg1741314246796025140 0
+78/home/spkide/Documents/Pixelverse1/Pixelverse/dist/construcciones.044e704e.css1741314825613029293 0
+71/home/spkide/Documents/Pixelverse1/Pixelverse/dist/1376473.df8b7418.jpg1741314825608029192 0
 81/home/spkide/Documents/Pixelverse1/Pixelverse/dist/starfield-heller.93bc238d.webp1741312411880505054 0
-77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/Pixelverse.59712999.js.map1741314246733024225 0
-93/home/spkide/Documents/Pixelverse1/Pixelverse/dist/588a44195922117.66168b374ece8.eb102b5d.gif1741314246771024777 0
-61/home/spkide/Documents/Pixelverse1/Pixelverse/dist/index.html1741314246662023195 0
+77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/Pixelverse.59712999.js.map1741314825486026729 0
+93/home/spkide/Documents/Pixelverse1/Pixelverse/dist/588a44195922117.66168b374ece8.eb102b5d.gif1741314825575028526 0
+61/home/spkide/Documents/Pixelverse1/Pixelverse/dist/index.html1741314825695030949 0
 105/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/dist/umd/popper-base.min.js.map1741305748247742429 0
 106/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/dist/umd/popper-lite.min.js.flow1741305748251742504 0
 95/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/dist/umd/enums.min.js1741305748194741429 0
@@ -150,7 +153,7 @@
 76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/node_modules1741305783663395281 1
 71/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/read.js1741305788435480974 0
 80/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/rollup.config.js1741305788436480992 0
-96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/386337b8629611b35b5a45388be40827.1ab25ecc.jpg1741314246445020046 0
+96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/386337b8629611b35b5a45388be40827.1ab25ecc.jpg1741314825433025659 0
 75/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/binding.gyp1741305788308478701 0
 118/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mdb_copy.c1741305787904471467 0
 122/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/sample-bdb.txt1741305788502482173 0
@@ -358,7 +361,7 @@
 110/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/lib/utils/mergePaddingObject.js.flow1741305748671750425 0
 112/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@msgpackr-extract/msgpackr-extract-linux-x64/index.js1741305786411444693 0
 116/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@msgpackr-extract/msgpackr-extract-linux-x64/package.json1741305786746450705 0
-76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@msgpackr-extract1741314092486771386 1
+76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@msgpackr-extract1741314412350095877 1
 103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/lib/utils/detectOverflow.d.ts1741305748651750048 0
 116/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_class_static_private_field_spec_set.cjs1741305787696467738 0
 82/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/semver/functions/lte.js1741305787578465624 0
@@ -428,7 +431,7 @@
 106/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/esm/_object_destructuring_empty.js1741305788210476947 0
 97/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lz4/lib/liblz4.pc.in1741305788410480527 0
 95/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/esm/_define_property.js1741305788137475640 0
-94/home/spkide/Documents/Pixelverse1/Pixelverse/dist/tumblr_nca6tjn3aI1rtbl5vo1_400.34ade028.gif1741314246409019523 0
+94/home/spkide/Documents/Pixelverse1/Pixelverse/dist/tumblr_nca6tjn3aI1rtbl5vo1_400.34ade028.gif1741314825411025214 0
 95/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/esm/_new_arrow_check.js1741305788198476732 0
 101/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/esm/_sliced_to_array_loose.js1741305788258477806 0
 104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/esm/_interop_require_wildcard.js1741305788178476374 0
@@ -629,7 +632,7 @@
 96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_new_arrow_check.mjs1741305789333497042 0
 110/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mdb_stat.c1741305787956472399 0
 110/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_class_apply_descriptor_update.mjs1741305789222495057 0
-77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/maxresdefault.7fe3e58d.jpg1741312411894505340 0
+77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/maxresdefault.7fe3e58d.jpg1741314825448025961 0
 96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_sliced_to_array.mjs1741305789364497596 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lightningcss-linux-x64-musl/package.json1741305786814451925 0
 94/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_object_spread.mjs1741305789346497274 0
@@ -683,7 +686,7 @@
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/types/assumptions.d.ts1741305787044456052 0
 80/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/types/index.d.ts1741305787278460246 0
 82/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/types/package.json1741305786972454761 0
-63/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc1741314092484771356 1
+63/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc1741314412350095877 1
 77/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/fill-range/LICENSE1741305786662449197 0
 84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_get.cjs1741305787806469710 0
 78/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/fill-range/index.js1741305786767451082 0
@@ -1480,6 +1483,7 @@
 112/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css-hanging-punctuation.js1741305788377479936 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/GM.js1741305788695485628 0
 97/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css-sel2.js1741305788457481368 0
+81/home/spkide/Documents/Pixelverse1/Pixelverse/dist/construcciones.4180ddb1.js.map1741314825500027011 0
 76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/picomatch/LICENSE1741305786663449215 0
 109/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/background-clip-text.js1741305787905471485 0
 98/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/mpeg-dash.js1741305789322496845 0
@@ -1578,7 +1582,7 @@
 111/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/passive-event-listener.js1741305789447499080 0
 98/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/shadowdom.js1741305789557501046 0
 102/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/text-emphasis.js1741305789625502262 0
-117/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/test/fixtures/has-foo/node_modules1741305787566465408 1
+97/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/template.js1741305789623502226 0
 82/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/packager-js/lib1741305787632466591 1
 117/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/test/fixtures/has-foo/package.json1741305787911471592 0
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/cosmiconfig/dist/defaults.d.ts1741305787796469531 0
@@ -1829,7 +1833,7 @@
 107/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/node_modules/node-addon-api/tools/README.md1741305787746468635 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/codeframe/test/codeframe.test.js1741305787980472829 0
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/cache/lib/LMDBCache.js1741305787382462110 0
-77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/nv0cg04bnka91.2ef2cc14.gif1741314246788025023 0
+77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/nv0cg04bnka91.2ef2cc14.gif1741314825582028667 0
 78/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/dotenv/CHANGELOG.md1741305787206458956 0
 105/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/font-size-adjust.js1741305788649484805 0
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/src/util/swipe.js1741305748646749954 0
@@ -2145,7 +2149,7 @@
 115/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/test/fixtures/packages/peers-2.01741305787927471879 1
 95/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/lib/modifiers/flip.js1741305748625749558 0
 104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/async-functions.js1741305787835470230 0
-80/home/spkide/Documents/Pixelverse1/Pixelverse/dist/pepe-watching-tv.11d23066.gif1741314246397019349 0
+80/home/spkide/Documents/Pixelverse1/Pixelverse/dist/pepe-watching-tv.11d23066.gif1741314825411025214 0
 109/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.d.ts1741305748345744277 0
 108/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_initializer_define_property.cjs1741305787818469925 0
 112/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css-backgroundblendmode.js1741305788198476732 0
@@ -2171,7 +2175,7 @@
 106/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/requests/WriteBundleRequest.js1741305788515482406 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/public/Target.js1741305788443481117 0
 76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/test1741305788494482030 1
-66/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel1741314092491771459 1
+66/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel1741314412350095877 1
 104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/public/MutableBundleGraph.js1741305788207476893 0
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/watcher/src/windows1741305787792469459 1
 78/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/workers/lib1741305787859470660 1
@@ -2202,10 +2206,6 @@
 107/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css-color-function.js1741305788241477502 0
 106/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-posthtml/src/loadPlugins.js1741305787029455783 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/BundleGraph.js1741305787968472614 0
-81/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-js1741305787305460730 1
-88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-babel/src1741305787566465408 1
-103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@msgpackr-extract/msgpackr-extract-linux-x641741305787237459511 1
-113/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/wasm-nontrapping-fptoint.js1741305789695503514 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/postcss-value-parser/lib/index.js1741305786956454474 0
 103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/feature-policy.js1741305788622484322 0
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/watcher/src/Backend.cc1741305786957454492 0
@@ -2255,7 +2255,7 @@
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/src/objectHash.js1741305788070474440 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/RE.js1741305789495499938 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/sass/types/value/calculation.d.ts1741314092342769268 0
-64/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@lmdb1741314092486771386 1
+64/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@lmdb1741314412350095877 1
 84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/index.umd.js1741305748628749614 0
 96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/6eddc477c7ab5513c5324055cd0e1c69.72086d06.jpg1741312565756571506 0
 85/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/src/index.js1741305788047474029 0
@@ -2413,7 +2413,7 @@
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/cosmiconfig/dist/util.d.ts.map1741305787763468939 0
 107/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_ts_add_disposable_resource.mjs1741305789388498025 0
 110/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/optimizer-htmlnano/src/HTMLNanoOptimizer.js1741305787125457504 0
-69/home/spkide/Documents/Pixelverse1/Pixelverse/src/construcciones.html1741314140907481818 0
+69/home/spkide/Documents/Pixelverse1/Pixelverse/src/construcciones.html1741314916530854457 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/bundler-default/LICENSE1741305786937454133 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/cosmiconfig/dist/ExplorerSync.d.ts1741305787808469746 0
 108/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/src/NodePackageManager.js1741305787806469710 0
@@ -2426,7 +2426,7 @@
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/domutils/lib/traversal.d.ts1741305787884471108 0
 104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_assert_this_initialized.cjs1741305787252459780 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/test/fixtures/parcel1741305788601483946 1
-58/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules1741314092484771356 1
+58/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules1741314412349095858 1
 80/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/packager-html1741305787177458436 1
 106/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/entities/lib/esm/generated/encode-html.d.ts.map1741305787817469907 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/sass/types/legacy/importer.d.ts1741314092392770003 0
@@ -2475,7 +2475,7 @@
 87/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/scss/_buttons.scss1741305748814753122 0
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/entities/lib/esm/index.js.map1741305787905471485 0
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/graph/lib/BitSet.js1741305787537464888 0
-79/home/spkide/Documents/Pixelverse1/Pixelverse/dist/f169e6ecbf0ad35.56205e65.gif1741314246397019349 0
+79/home/spkide/Documents/Pixelverse1/Pixelverse/dist/f169e6ecbf0ad35.56205e65.gif1741314825411025214 0
 87/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/entities/lib/esm/decode.d.ts1741305787941472130 0
 84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/rust/package.json1741305787124457486 0
 100/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/import-maps.js1741305788863488636 0
@@ -2803,8 +2803,24 @@
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/src/debounce.js1741305787537464888 0
 106/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_object_without_properties.mjs1741305789349497328 0
 95/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/entities/lib/decode_codepoint.js.map1741305787718468133 0
+74/home/spkide/Documents/Pixelverse1/Pixelverse/src/img/giy2e4txqaa1qgz.jpeg1741314735074284232 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/posthtml/node_modules/domhandler/LICENSE1741305786940454187 0
 100/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/optimizer-swc/lib/SwcOptimizer.js1741305786992455120 0
+114/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/midl.c1741305788072474476 0
+94/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/src/Pnpm.js1741305787840470319 0
+103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/test/input/sourcemap/inline.js1741305788062474297 0
+92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/url.js1741305789667503013 0
+93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/lib/resolveOptions.js1741305788404480419 0
+98/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_apply_decs_2203_r.cjs1741305787023455676 0
+104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/x-doc-messaging.js1741305789748504461 0
+54/home/spkide/Documents/Pixelverse1/Pixelverse/src/scss1741305810961878486 1
+85/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/ordered-binary/.nyc_output1741305787278460246 1
+100/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/svg-filters.js1741305789605501904 0
+84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/namer-default/src1741305787029455783 1
+90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/TL.js1741305789633502405 0
+90/home/spkide/Documents/Pixelverse1/Pixelverse/src/img/662cda1ea6bdac6afb16973961c2c8d1.gif1741306826562809400 0
+103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/_/_to_property_key/package.json1741305788965490462 0
+89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/Validation.js1741305788504482209 0
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/sass/types/value/boolean.d.ts1741314092342769268 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lightningcss/node/index.js.flow1741305787446463257 0
 96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/runtime-js/lib/helpers/worker1741305787840470319 1
@@ -2867,21 +2883,6 @@
 97/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/download.js1741305788587483695 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/graph/lib/shared-buffer.js1741305787706467918 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-postcss/package.json1741305787429462953 0
-84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/namer-default/src1741305787029455783 1
-90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/TL.js1741305789633502405 0
-90/home/spkide/Documents/Pixelverse1/Pixelverse/src/img/662cda1ea6bdac6afb16973961c2c8d1.gif1741306826562809400 0
-103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/_/_to_property_key/package.json1741305788965490462 0
-89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/Validation.js1741305788504482209 0
-114/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/midl.c1741305788072474476 0
-94/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/src/Pnpm.js1741305787840470319 0
-103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/test/input/sourcemap/inline.js1741305788062474297 0
-92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/url.js1741305789667503013 0
-93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/lib/resolveOptions.js1741305788404480419 0
-98/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_apply_decs_2203_r.cjs1741305787023455676 0
-104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/x-doc-messaging.js1741305789748504461 0
-54/home/spkide/Documents/Pixelverse1/Pixelverse/src/scss1741305810961878486 1
-85/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/ordered-binary/.nyc_output1741305787278460246 1
-100/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/svg-filters.js1741305789605501904 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/PH.js1741305789459499294 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-image/LICENSE1741305786815451943 0
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/htmlnano/docs/babel.config.js1741305787761468904 0
@@ -2917,7 +2918,7 @@
 79/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@lmdb/lmdb-linux-x641741305788112475192 1
 87/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/type-fest/source/opaque.d.ts1741305787590465838 0
 74/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/globals/license1741305786808451817 0
-53/home/spkide/Documents/Pixelverse1/Pixelverse/src/img1741313030465049707 1
+53/home/spkide/Documents/Pixelverse1/Pixelverse/src/img1741314738834355070 1
 96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lightningcss/node_modules/detect-libc1741305787269460085 1
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/watcher/binding.gyp1741305787650466914 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/dist/carousel.js.map1741305748781752500 0
@@ -2975,7 +2976,7 @@
 70/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/timsort/src1741305787212459063 1
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/src/Deferred.js1741305787576465588 0
 121/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/test/fixtures/custom-format-mismatch/package.json1741305788556483140 0
-96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/662cda1ea6bdac6afb16973961c2c8d1.ac594b74.gif1741314246396019335 0
+96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/662cda1ea6bdac6afb16973961c2c8d1.ac594b74.gif1741314825305023074 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/cosmiconfig/dist/cacheWrapper.d.ts1741305787792469459 0
 80/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/codeframe/src1741305787968472614 1
 109/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/runtime-js/src/helpers/worker/js-loader.js1741305787747468652 0
@@ -3053,6 +3054,10 @@
 105/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-react-refresh-wrap/LICENSE1741305786815451943 0
 91/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/utils/src/getExisting.js1741305787626466484 0
 108/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/source-map/parcel_sourcemap_node/build.rs1741305788419480688 0
+81/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-js1741305787305460730 1
+88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-babel/src1741305787566465408 1
+103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@msgpackr-extract/msgpackr-extract-linux-x641741305787237459511 1
+113/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/wasm-nontrapping-fptoint.js1741305789695503514 0
 76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/type-fest/license1741305786672449377 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/MX.js1741305789350497346 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/domutils/lib/esm/feeds.d.ts.map1741305787571465498 0
@@ -3061,7 +3066,7 @@
 79/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/import-fresh/license1741305786663449215 0
 109/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css-text-orientation.js1741305788486481887 0
 91/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/src/_instanceof.mjs1741305789324496881 0
-63/home/spkide/Documents/Pixelverse1/Pixelverse/package-lock.json1741314092722774856 0
+63/home/spkide/Documents/Pixelverse1/Pixelverse/package-lock.json1741314412674102204 0
 76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/term-size/license1741305787023455676 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/spdy.js1741305789578501422 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/src/img/dc7f90b52f8c95e29939b431b93ee0b6.gif1741307872858605383 0
@@ -3139,6 +3144,7 @@
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/KW.js1741305789057492107 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/domutils/lib/esm/helpers.d.ts.map1741305787619466358 0
 100/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/wbr-element.js1741305789698503567 0
+80/home/spkide/Documents/Pixelverse1/Pixelverse/dist/giy2e4txqaa1qgz.2a476b16.jpeg1741314825486026729 0
 72/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/msgpackr/dist1741305788058474226 1
 103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/posthtml/node_modules/entities/lib/generated1741305787644466806 1
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/domutils/lib/esm/feeds.js.map1741305787581465677 0
@@ -3209,7 +3215,7 @@
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/dist/collapse.js1741305748579748690 0
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/sass/types/value/color.d.ts1741314092351769401 0
 81/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/resolve-from/readme.md1741305786998455228 0
-96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/dc7f90b52f8c95e29939b431b93ee0b6.edeaaad0.gif1741312565767571720 0
+96/home/spkide/Documents/Pixelverse1/Pixelverse/dist/dc7f90b52f8c95e29939b431b93ee0b6.edeaaad0.gif1741314825447025941 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/workers/src/cpuCount.js1741305787541464960 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/src/util/scrollbar.js1741305748642749878 0
 80/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/escalade/package.json1741305787010455443 0
@@ -3304,6 +3310,9 @@
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@popperjs/core/dist/cjs/popper.js1741305748163740845 0
 102/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/object-values.js1741305789418498561 0
 88/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/scss/_carousel.scss1741305748817753179 0
+102/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/reporter-cli/lib/CLIReporter.js.map1741305787808469746 0
+90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/FM.js1741305788642484680 0
+96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-svg/src/inline.js1741305787213459081 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/profiler/lib/SamplingProfiler.js1741305787115457325 0
 84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/codeframe/LICENSE1741305786808451817 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/feature-flags/package.json1741305787262459960 0
@@ -3507,9 +3516,7 @@
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/CommittedAsset.js1741305787992473044 0
 69/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/parcel/lib1741305787085456787 1
 76/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/types/src1741305786927453953 1
-102/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/reporter-cli/lib/CLIReporter.js.map1741305787808469746 0
-90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/FM.js1741305788642484680 0
-96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-svg/src/inline.js1741305787213459081 0
+117/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/test/fixtures/has-foo/node_modules1741305787566465408 1
 117/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/COPYRIGHT1741305787073456572 0
 126/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/package-manager/test/fixtures/has-foo/node_modules/index.js1741305787566465408 0
 77/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/term-size/index.js1741305787379462057 0
@@ -3730,8 +3737,8 @@
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/diagnostic/package.json1741305787316460927 0
 95/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/diagnostic/src/diagnostic.js1741305787092456912 0
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/_/_throw/package.json1741305788925489746 0
-112/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-postcss/lib/PostCSSTransformer.js1741305787378462039 0
 98/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/dist/util/scrollbar.js.map1741305748806752971 0
+112/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/transformer-postcss/lib/PostCSSTransformer.js1741305787378462039 0
 85/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/diagnostic/LICENSE1741305786935454097 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/core/src/public/PluginOptions.js1741305788368479775 0
 101/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/dist/js/bootstrap.esm.min.js.map1741305748756752028 0
@@ -3802,7 +3809,7 @@
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/workers/src/backend.js1741305787026455729 0
 96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/scss/helpers/_position.scss1741305748858753952 0
 90/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/regions/GA.js1741305788666485109 0
-60/home/spkide/Documents/Pixelverse1/Pixelverse/src/index.html1741314311430113540 0
+60/home/spkide/Documents/Pixelverse1/Pixelverse/src/index.html1741314788446287177 0
 91/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/cosmiconfig/dist/Explorer.js.map1741305787555465211 0
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/domutils/lib/esm/index.d.ts1741305787842470355 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/workers/src/childState.js1741305787377462021 0
@@ -4092,7 +4099,7 @@
 91/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/electron-to-chromium/versions.js1741305787161458149 0
 107/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/electron-to-chromium/full-chromium-versions.json1741305787297460587 0
 99/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css1741305748252742523 0
-50/home/spkide/Documents/Pixelverse1/Pixelverse/dist1741314246797025154 1
+50/home/spkide/Documents/Pixelverse1/Pixelverse/dist1741314825696030969 1
 71/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/argparse/lib1741305787252459780 1
 96/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/_/_defaults/package.json1741305788604484000 0
 98/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/atob-btoa.js1741305787847470445 0
@@ -4284,7 +4291,7 @@
 91/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/dist/tooltip.js.map1741305748808753009 0
 92/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/mp3.js1741305789321496827 0
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/dist/modal.js.map1741305748805752952 0
-77/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/.package-lock.json1741314092834776503 0
+77/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/.package-lock.json1741314412783104332 0
 84/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/weak-lru-cache/index.d.ts1741305787278460246 0
 134/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/source-map/parcel_sourcemap_wasm/dist-node/parcel_sourcemap_wasm.js1741305787523464638 0
 85/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/js/dist/modal.js1741305748636749765 0
@@ -4783,7 +4790,6 @@
 107/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css3-cursors-newer.js1741305788516482424 0
 105/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/css-supports-api.js1741305788465481511 0
 104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/async-clipboard.js1741305787826470069 0
-97/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/template.js1741305789623502226 0
 109/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@parcel/runtime-js/lib/helpers/worker/js-loader.js1741305787709467971 0
 111/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/contentsecuritypolicy2.js1741305788145475783 0
 89/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/@swc/helpers/cjs/_inherits.cjs1741305787812469818 0
@@ -4848,6 +4854,7 @@
 93/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/midi.js1741305789305496541 0
 116/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/htmlnano/docs/versioned_docs/version-1.1.1/050-modules.md1741305788057474208 0
 104/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/iframe-seamless.js1741305788850488403 0
+77/home/spkide/Documents/Pixelverse1/Pixelverse/dist/construcciones.4180ddb1.js1741314825433025659 0
 103/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/object-entries.js1741305789414498490 0
 86/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/bootstrap/scss/_images.scss1741305748842753650 0
 102/home/spkide/Documents/Pixelverse1/Pixelverse/node_modules/caniuse-lite/data/features/sharedworkers.js1741305789562501136 0
